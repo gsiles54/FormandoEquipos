@@ -7,9 +7,17 @@ public class Equipo {
 	private List<Integer> filas;
 	private String cad;
 	private Integer afinidad;
+	private int orden;
 	
-	public Equipo(String cad) {
+	public int getOrden() {
+		return orden;
+	}
+	public void setOrden(int orden) {
+		this.orden = orden;
+	}
+	public Equipo(String cad,int orden) {
 		this.cad=cad;
+		this.orden=orden;
 		filas = new ArrayList<>();
 		
 	}
